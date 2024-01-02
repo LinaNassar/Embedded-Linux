@@ -1,0 +1,11 @@
+#!/bin/bash 
+
+if test -f $HOME/.bashrc; then
+
+	echo "export HELLO=\$HOSTNAME" >> ~/.bashrc
+	echo "export LOCAL=\$(whoami)" >> ~/.bashrc
+	gnome-terminal
+
+else
+	echo ".bashrc file not found" 
+fi
